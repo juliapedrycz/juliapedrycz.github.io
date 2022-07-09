@@ -1,0 +1,60 @@
+import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
+
+const Label1 = styled.label`
+  font-family: The Nautigal;
+  font-size: 128px;
+`
+
+const Label2 = styled.label`
+  font-family: The Nautigal;
+  font-size: 64px;
+`
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+
+export const Counter = () => {
+    const [days, hours, minutes, seconds] = useCountdown(new Date("Oct 1, 2022 17:00:00"));
+
+    return (
+        <Container>    
+            <Label1>Do ślubu zostało:</Label1>
+            <Label2> {days}d {hours}h  {minutes}m {seconds}s</Label2>
+        </Container>
+    )
+}
+
+
+const useCountdown = (targetDate) => {
+  const countDownDate = new Date(targetDate).getTime();
+
+  const [countDown, setCountDown] = useState(
+    countDownDate - new Date().getTime()
+  );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCountDown(countDownDate - new Date().getTime());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [countDownDate]);
+
+  return getReturnValues(countDown);
+};
+
+const getReturnValues = (countDown) => {
+  const days = Math.floor(countDown / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
+
+  return [days, hours, minutes, seconds];
+};
