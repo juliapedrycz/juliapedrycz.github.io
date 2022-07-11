@@ -1,12 +1,26 @@
 {
   "files": {
-    "main.js": "/static/js/main.babb86eb.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "main.css": "/static/css/main.34043337.chunk.css",
+    "main.js": "/static/js/main.fdb86398.chunk.js",
+    "main.js.map": "/static/js/main.fdb86398.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.166f362e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.166f362e.js.map",
+    "static/js/2.e438278f.chunk.js": "/static/js/2.e438278f.chunk.js",
+    "static/js/2.e438278f.chunk.js.map": "/static/js/2.e438278f.chunk.js.map",
     "index.html": "/index.html",
-    "main.babb86eb.js.map": "/static/js/main.babb86eb.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "static/css/main.34043337.chunk.css.map": "/static/css/main.34043337.chunk.css.map",
+    "static/js/2.e438278f.chunk.js.LICENSE.txt": "/static/js/2.e438278f.chunk.js.LICENSE.txt",
+    "static/media/drink1.3c088420.jpeg": "/static/media/drink1.3c088420.jpeg",
+    "static/media/drink2.5602f1e0.png": "/static/media/drink2.5602f1e0.png",
+    "static/media/drink3.3c088420.jpeg": "/static/media/drink3.3c088420.jpeg",
+    "static/media/drink4.3c088420.jpeg": "/static/media/drink4.3c088420.jpeg",
+    "static/media/drink5.3c088420.jpeg": "/static/media/drink5.3c088420.jpeg",
+    "static/media/possibility.525f13b6.png": "/static/media/possibility.525f13b6.png"
   },
   "entrypoints": [
-    "static/js/main.babb86eb.js"
+    "static/js/runtime-main.166f362e.js",
+    "static/js/2.e438278f.chunk.js",
+    "static/css/main.34043337.chunk.css",
+    "static/js/main.fdb86398.chunk.js"
   ]
 }
