@@ -3,12 +3,12 @@ import styled from 'styled-components';
 
 const Label1 = styled.label`
   font-family: The Nautigal;
-  font-size: 128px;
+  font-size: ${(props) => props.isMobile ? '76px' : '128px' };
 `
 
 const Label2 = styled.label`
   font-family: The Nautigal;
-  font-size: 64px;
+  font-size: ${(props) => props.isMobile ? '64px' : '64px' };
 `
 
 const Container = styled.div`
@@ -18,13 +18,14 @@ const Container = styled.div`
     align-items: center;
 `
 
-export const Counter = () => {
+export const Counter = (props) => {
+    const {isMobile} = props;
     const [days, hours, minutes, seconds] = useCountdown(new Date("Oct 1, 2022 17:00:00"));
 
     return (
         <Container>    
-            <Label1>Do ślubu zostało:</Label1>
-            <Label2> {days}d {hours}h  {minutes}m {seconds}s</Label2>
+            <Label1 isMobile={isMobile}>Do ślubu zostało:</Label1>
+            <Label2 isMobile={isMobile}> {days}d {hours}h  {minutes}m {seconds}s</Label2>
         </Container>
     )
 }
