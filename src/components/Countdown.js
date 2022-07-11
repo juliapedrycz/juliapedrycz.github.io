@@ -5,13 +5,25 @@ import { useMediaQuery } from 'react-responsive'
 const Label1 = styled.label`
   font-family: The Nautigal;
   font-size: ${(props) => props.isMobile ? '76px' : '128px' };
-  color: #dc8777;
+  background-color: #f3ec78;
+  background-image: linear-gradient(89.97deg, #d26558 1.84%, #F49867 102.67%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 `
 
 const Label2 = styled.label`
   font-family: The Nautigal;
   font-size: ${(props) => props.isMobile ? '64px' : '64px' };
-  color: #dc8777;
+  background-color: #f3ec78;
+  background-image: linear-gradient(89.97deg, #d26558 1.84%, #F49867 102.67%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 `
 
 const Container = styled.div`
